@@ -38,5 +38,5 @@ class AccountInvoice(models.Model):
             if i + 1 > len(refund_lines_vals):  # pragma: no cover
                 # Avoid error if someone manipulate the original method
                 break
-                refund_lines_vals[i][2]['origin_line_ids'] = [(6, 0, line.ids)]
+            refund_lines_vals[i][2]['origin_line_ids'] = [(6, 0, line.ids)]
         return res
