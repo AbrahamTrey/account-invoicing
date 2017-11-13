@@ -18,6 +18,7 @@
     "post_init_hook": "post_init_hook",
     "depends": [
         'account',
+        'sale'
     ],
     "data": [
         'views/account_invoice_view.xml',

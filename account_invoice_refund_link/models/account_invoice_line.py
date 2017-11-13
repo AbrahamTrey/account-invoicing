@@ -2,8 +2,10 @@
 # Copyright 2004-2011 Pexego Sistemas Informáticos. (http://pexego.es)
 # Copyright 2016 Antonio Espinosa <antonio.espinosa@tecnativa.com>
 # Copyright 2014-2017 Pedro M. Baeza <pedro.baeza@tecnativa.com>
+# Copyright 2017 Abraham Gonzalez (http:www.trey.es)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
-from odoo import api, models, fields
+
+from odoo import models, fields
 
 
 class AccountInvoiceLine(models.Model):

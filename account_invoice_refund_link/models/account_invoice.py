@@ -2,6 +2,7 @@
 # Copyright 2004-2011 Pexego Sistemas Informáticos. (http://pexego.es)
 # Copyright 2016 Antonio Espinosa <antonio.espinosa@tecnativa.com>
 # Copyright 2014-2017 Pedro M. Baeza <pedro.baeza@tecnativa.com>
+# Copyright 2017 Abraham Gonzalez (http:www.trey.es)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 from odoo import api, models, fields
@@ -37,5 +38,5 @@ class AccountInvoice(models.Model):
             if i + 1 > len(refund_lines_vals):  # pragma: no cover
                 # Avoid error if someone manipulate the original method
                 break
-            refund_lines_vals[i][2]['origin_line_ids'] = [(6, 0, line.ids)]
+                refund_lines_vals[i][2]['origin_line_ids'] = [(6, 0, line.ids)]
         return res

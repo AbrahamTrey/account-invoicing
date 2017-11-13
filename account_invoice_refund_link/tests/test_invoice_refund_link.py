@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# Copyright 2017 Abraham Gonzalez <abraham@trey.com>
 # Copyright 2016 Antonio Espinosa <antonio.espinosa@tecnativa.com>
 # Copyright 2014-2017 Pedro M. Baeza <pedro.baeza@tecnativa.com>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
@@ -14,7 +15,8 @@ class TestInvoiceRefundLink(common.SavepointCase):
     def setUpClass(cls):
         super(TestInvoiceRefundLink, cls).setUpClass()
         cls.partner = cls.env['res.partner'].create({
-            'name': 'Test partner',
+            'name': 'Company Name',
+            'vat': 'ES12345678Z',
         })
         default_line_account = cls.env['account.account'].search([
             ('internal_type', '=', 'other'),
