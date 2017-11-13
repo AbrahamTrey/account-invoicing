@@ -15,7 +15,7 @@ class TestInvoiceRefundLink(common.SavepointCase):
     def setUpClass(cls):
         super(TestInvoiceRefundLink, cls).setUpClass()
         cls.partner = cls.env['res.partner'].create({
-            'name': 'Company Name',
+            'name': 'Test partner Name',
             'vat': 'ES12345678Z',
         })
         default_line_account = cls.env['account.account'].search([
